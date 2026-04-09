@@ -18,7 +18,7 @@ function AssetsManagerDialog:init(params, menu)
     end
     self._exporter = BLE.Utils.Export:new()
 	params.scrollbar = false
-    menu = menu or BeardLib.managers.dialog:Menu()
+    menu = menu or BeardLib.Managers.dialog:Menu()
     self._unit_info = menu:Menu(table.merge({
         name = "unitinfo",
         visible = false,
